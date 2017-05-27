@@ -145,8 +145,8 @@
 		                            <div class="tab-pane" id="type">
 		                                <h4 class="info-text">Why do you want to redesign? </h4>
 		                                <div class="row">
-		                                    <div class="col-sm-12 col-sm-offset-1">
-		                                        <div class="col-sm-5 col-sm-offset-2">
+		                                    <div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="col-sm-4 col-sm-offset-2">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you are redecorating.">
 		                                                <input type="radio" name="type" value="House">
 		                                                <!-- <div class="icon">
@@ -155,7 +155,7 @@
 		                                                <h6>I’m redecorating</h6>
 		                                            </div>
 		                                        </div>
-		                                        <div class="col-sm-5">
+		                                        <div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you are moving.">
 		                                                <input type="radio" name="type" value="Appartment">
 		                                                <!-- <div class="icon">
@@ -167,8 +167,8 @@
 		                                    </div>
 		                                </div>
 										<div class="row">
-		                                    <div class="col-sm-12 col-sm-offset-1">
-		                                        <div class="col-sm-5 col-sm-offset-2">
+		                                    <div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="col-sm-4 col-sm-offset-2">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you need help with layout.">
 		                                                <input type="radio" name="type" value="House">
 		                                                <!-- <div class="icon">
@@ -177,13 +177,13 @@
 		                                                <h6>I need help with a layout</h6>
 		                                            </div>
 		                                        </div>
-		                                        <div class="col-sm-5">
+		                                        <div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you are looking for specific pieces.">
 		                                                <input type="radio" name="type" value="Appartment">
 		                                                <!-- <div class="icon">
 		                                                    <i class="material-icons">hotel</i>
 		                                                </div> -->
-		                                                <h6>I’m looking for a few specific pieces (rug, sofa, etc)</h6>
+		                                                <h6>I’m looking for a few specific pieces</h6>
 		                                            </div>
 		                                        </div>
 		                                    </div>
@@ -236,20 +236,22 @@
 		                                </div>
 		                            </div>
 		                            <div class="tab-pane" id="description">
+		                                <<h4 class="info-text">What is your overall budget for the project? </h4>
 		                                <div class="row">
-		                                    <h4 class="info-text"> Drop us a small description. </h4>
-		                                    <div class="col-sm-6 col-sm-offset-1">
-		                                        <div class="form-group label-floating">
-		                                            <label class="control-label">Place description</label>
-		                                            <textarea class="form-control" placeholder="" rows="9"></textarea>
-		                                        </div>
+		                                    <div class="col-sm-10 col-sm-offset-1">
+		                                      <div class="form-group label-floating">
+		                                        	<label class="control-label">My budget is</label>
+		                                        	<select class="form-control">
+		                                            	<option disabled="" selected=""></option>
+		                                            	<option>$1000 or less</option>
+		                                            	<option>$2500</option>
+		                                            	<option>$5000</option>
+														<option>$7500</option>
+														<option>10000 or more</option>
+		                                        	</select>
+		                                    	</div>
 		                                    </div>
-		                                    <div class="col-sm-4">
-		                                    	<div class="form-group label-floating">
-		                                            <label class="control-label">Example</label>
-		                                            <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
-		                                        </div>
-		                                    </div>
+		                                    
 		                                </div>
 		                            </div>
 		                        </div>
