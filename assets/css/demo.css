@@ -29,6 +29,10 @@ body{
     min-height: inherit;
 }
 
+.wizard-container{
+	height:1000px;
+}
+
 .tim-row{
     margin-bottom: 20px;
 }
@@ -163,7 +167,7 @@ body{
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #333333;
-    width: 50px;
+    width: 100px;
     float: left;
 }
 
