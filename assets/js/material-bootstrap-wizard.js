@@ -152,6 +152,16 @@ $(document).ready(function(){
 
     $('.set-full-height').css('height', 'auto');
 
+
+	
+	// MA js code
+	
+	$(function(event) {
+		$("li").on("click",function(event) {
+			event.stopImmediatePropagation();
+		});
+	});
+	
 });
 
 
