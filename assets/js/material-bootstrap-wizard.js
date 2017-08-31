@@ -151,8 +151,6 @@ $(document).ready(function(){
     });
 
     $('.set-full-height').css('height', 'auto');
-
-
 	
 	// MA js code
 	
@@ -161,6 +159,11 @@ $(document).ready(function(){
 			event.stopImmediatePropagation();
 		});
 	});
+	
+	
+	
+	
+	
 	
 });
 
