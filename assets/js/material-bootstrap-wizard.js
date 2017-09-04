@@ -211,28 +211,28 @@ $(document).ready(function(){
 //define toolset (JSON, e.g. from database)...
 var tools = [{
     "data-id": 1,
-    alt: "sun",
-    title: "sun",
+    alt: "armchair",
+    title: "armchair",
     src: "assets/img/furniture/house_armchair.png",
-    "data-description": "sun in photo"
+    "data-description": "armchair"
 }, {
     "data-id": 2,
-    alt: "snow",
-    title: "snow",
+    alt: "housebed",
+    title: "housebed",
     src: "assets/img/furniture/house_bed.png",
-    "data-description": "snow in photo"
+    "data-description": "housebed"
 }, {
     "data-id": 3,
-    alt: "cloud",
-    title: "cloud",
+    alt: "housechair",
+    title: "housechair",
     src: "assets/img/furniture/house_chair.png",
-    "data-description": "cloud in photo"
+    "data-description": "housechair"
 }, {
     "data-id": 4,
-    alt: "rain",
-    title: "rain",
+    alt: "housedesk",
+    title: "housedesk",
     src: "assets/img/furniture/house_desk.png",
-    "data-description": "rain in photo"
+    "data-description": "housedesk"
 }];
 
 
