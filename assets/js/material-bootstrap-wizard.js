@@ -161,12 +161,79 @@ $(document).ready(function(){
 	});
 	
 	
-	
+	 var $o, os;
+
+    //generate toolbar
+    var $toolbar = $(".toolbar");
+    $.each(tools, function (i, tool) {
+        $("<img>", tool).appendTo($toolbar);
+    });
+    var $tools = $toolbar.find("img");
+
+    //define drag and drop handlers
+    $toolbar.on("dragstart", "img", onDrag);
+    $(".canvas").on({
+        dragenter: false,
+        dragover: false,
+        drop: onDrop
+    });
+
+    //handle commencement of drag
+    function onDrag(e) {
+        $o = $(this).clone();
+        var o = e.originalEvent;
+        o.effectAllowed = "copy";
+        os = { X: o.offsetX, Y: o.offsetY };
+    }
+
+    //handle drop
+    function onDrop(e) {
+        e.preventDefault();
+        var o = e.originalEvent;
+        var pos = { left: o.offsetX - os.X, top: o.offsetY - os.Y };
+        $o.css(pos);
+        $(this).append($o);
+        //***DATABASE example:-
+        // (1) Create dataset, e.g. JSON:-
+        var data = {
+            id: $o.data("id"),
+            description: $o.data("description"),
+            position: pos
+        };
+        // (2) Send (JSON) data to SQL webservice using AJAX POST:-   
+        //$.post("sqlwebservice.ashx", data);
+        return false;
+    }
 	
 	
 	
 });
-
+//define toolset (JSON, e.g. from database)...
+var tools = [{
+    "data-id": 1,
+    alt: "sun",
+    title: "sun",
+    src: "assets/img/furniture/house_armchair.png",
+    "data-description": "sun in photo"
+}, {
+    "data-id": 2,
+    alt: "snow",
+    title: "snow",
+    src: "assets/img/furniture/house_bed.png",
+    "data-description": "snow in photo"
+}, {
+    "data-id": 3,
+    alt: "cloud",
+    title: "cloud",
+    src: "assets/img/furniture/house_chair.png",
+    "data-description": "cloud in photo"
+}, {
+    "data-id": 4,
+    alt: "rain",
+    title: "rain",
+    src: "assets/img/furniture/house_desk.png",
+    "data-description": "rain in photo"
+}];
 
 
  //Function to show image before upload
