@@ -238,16 +238,6 @@ var tools = [{
 
  //Function to show image before upload
 
-function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
-        }
-        reader.readAsDataURL(input.files[0]);
-    }
-}
 
 $(window).resize(function(){
     $('.wizard-card').each(function(){
@@ -335,3 +325,23 @@ function debounce(func, wait, immediate) {
 		if (immediate && !timeout) func.apply(context, args);
 	};
 };
+
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                /*alert(e.target.result);
+				document.getElementById('canvas').style.backgroundImage="url(e.target.result)";
+				$('#canvas')
+                    .attr('background', e.target.result)
+                    .width(150)
+                    .height(200);*/
+            };
+			reader.onloadend = function () {
+               $('#canvas').css('background-image', 'url("' + reader.result + '")');
+            }
+			
+			reader.readAsDataURL(input.files[0]);
+        }
+    }

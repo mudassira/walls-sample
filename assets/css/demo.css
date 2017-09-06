@@ -678,9 +678,9 @@ footer .pull-center {
 }
 .canvas {
     position:relative;
-    height:550px;
-    width:400px;
-    background:Yellow url("http://www.mapstop.co.uk/images/uploaded/lrg_wg2668.6a40d0d.jpg") no-repeat;
+    height:400px;
+    width:600px;
+    background:White url("../img/empty_room.jpg") no-repeat;
 }
 .canvas img {
     position:absolute;
