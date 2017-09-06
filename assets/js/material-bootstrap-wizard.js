@@ -213,27 +213,42 @@ var tools = [{
     "data-id": 1,
     alt: "armchair",
     title: "armchair",
-    src: "assets/img/furniture/house_armchair.png",
+    src: "assets/img/furniture/armchair1-small.png",
     "data-description": "armchair"
 }, {
     "data-id": 2,
     alt: "housebed",
     title: "housebed",
-    src: "assets/img/furniture/house_bed.png",
+    src: "assets/img/furniture/bed1-medium.png",
     "data-description": "housebed"
 }, {
     "data-id": 3,
     alt: "housechair",
     title: "housechair",
-    src: "assets/img/furniture/house_chair.png",
+    src: "assets/img/furniture/chair1-medium.png",
     "data-description": "housechair"
 }, {
     "data-id": 4,
     alt: "housedesk",
     title: "housedesk",
-    src: "assets/img/furniture/house_desk.png",
+    src: "assets/img/furniture/table1-medium.png",
     "data-description": "housedesk"
-}];
+},
+{
+    "data-id": 5,
+    alt: "housechair",
+    title: "housechair",
+    src: "assets/img/furniture/chair2-small.png",
+    "data-description": "housechair"
+},
+{
+    "data-id": 6,
+    alt: "sofa",
+    title: "sofa`",
+    src: "assets/img/furniture/sofa1-small.png",
+    "data-description": "housechair"
+}
+];
 
 
  //Function to show image before upload

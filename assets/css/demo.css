@@ -678,9 +678,9 @@ footer .pull-center {
 }
 .canvas {
     position:relative;
-    height:400px;
-    width:600px;
-    background:White url("../img/empty_room.jpg") no-repeat;
+    height:600px;
+    width:900px;
+    background:White url("../img/empty_room_large.jpg") no-repeat;
 }
 .canvas img {
     position:absolute;
